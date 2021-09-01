@@ -1,6 +1,6 @@
 file { '/tmp/xyz.txt':
   ensure  => present,
-  mode    => 0666,
+  mode    => '0666',
   content => "Here is my Public IP Address: ${ipaddress_eth0}.\n",
 }
 
